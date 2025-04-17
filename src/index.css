@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -97,5 +99,38 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .pune-heading {
+    @apply text-pune-teal font-bold font-montserrat relative pb-2 mb-6;
+  }
+  
+  .pune-heading::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-16 h-1 bg-pune-orange rounded;
+  }
+
+  .pune-card {
+    @apply rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .pune-btn {
+    @apply rounded-md px-6 py-2 font-semibold transition-all duration-300;
+  }
+
+  .pune-btn-primary {
+    @apply pune-btn bg-pune-teal text-white hover:bg-pune-teal/90;
+  }
+
+  .pune-btn-secondary {
+    @apply pune-btn bg-pune-orange text-white hover:bg-pune-orange/90;
   }
 }

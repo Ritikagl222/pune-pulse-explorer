@@ -61,6 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				pune: {
+					teal: '#036666',
+					orange: '#FF7A48',
+					gold: '#FFC93C',
+					cream: '#F8F9FA',
+					dark: '#333333'
 				}
 			},
 			borderRadius: {
@@ -89,6 +96,10 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
+			},
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'opensans': ['Open Sans', 'sans-serif']
 			}
 		}
 	},
